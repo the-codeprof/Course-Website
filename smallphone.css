@@ -1,0 +1,824 @@
+
+@media only screen and (max-width:320px) {
+
+    /* General styling starts here */
+
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    box-sizing:border-box;
+    text-decoration:none;
+    outline:none;
+   
+}
+
+/* General styling ends here */
+
+
+
+/* body styling starts here */
+
+
+body{
+    background-color:white;
+   
+
+}
+
+/* body styling ends here */
+
+
+
+/* head and nav styling starts here */
+
+header{
+    position:fixed;
+    display:inline-block;
+    width:100%;
+    z-index:10000000;
+    background-color:white;
+    
+
+}
+
+#brand{
+
+    width:100%;
+    float:left;
+    padding:10px;
+    margin-top:5%
+ 
+}
+
+#brand h1{
+
+    font-family:monospace;
+    color:#2C93C9;
+    text-align: center;
+}
+
+nav{
+    width:100%;
+    padding:20px;
+    position:relative;
+}
+
+nav ul{
+    width:80%;
+    margin: 0 auto;
+    display: none;
+   
+}
+
+nav ul li{
+    display:inline-block;
+    padding:10px;
+   
+}
+
+nav ul li a{
+    text-decoration:none;
+    text-align:center;
+    color:#999;
+    font-family:monospace;
+    font-size:large;
+    padding:3px 3px 5px 0px;
+    
+}
+
+
+nav ul li a:hover{
+    color:#000;
+   
+}
+
+
+nav ul li a:active{
+    color:#FF525E;
+}
+
+nav ul li a.active{
+    color:#2C93C9;
+    
+}
+
+ul li a.course_link{
+    position: relative;
+    display: inline-block;
+   
+}
+
+.course_box{
+    display: none;
+    max-width:100%;
+    background-color:rgb(251, 254, 255);
+    position: absolute;
+    z-index: 10;
+    padding: 20px 10px;
+    left:0px;
+    overflow: auto;
+    border: none;
+    box-shadow: 0 8px 16px 0 #999;
+    transition: display 1.5s ease-in-out;
+  
+}
+
+.course_1{
+    width:45%;
+    float: left;
+    
+}
+
+
+.course_2{
+    width:45%;
+    float: right;
+}
+
+.course_box ul{
+    width:95%;
+}
+
+.course_box .course_1 ul li {
+    display: inline-block;
+}
+
+.course_box .course_2 ul li {
+    display: inline-block;
+}
+
+
+li.course_link:hover .course_box{
+    display: block;
+    color:#555;
+    height: 200px;
+
+}
+
+
+/* head and nav styling ends here */
+
+
+
+/* search course styling starts here */
+
+#searchBar{
+    width:100%;
+    display:block;
+    padding: 10px;
+    background-color:rgb(215, 241, 253);;
+    margin-top: 70%;
+
+}
+
+#searchBar #searchCourses{
+      
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+    margin: 0 auto;
+    border:none;
+   
+}
+
+#searchBar #searchCourses form{
+    width:100%;
+    padding:5px;
+    border:none;
+    display: block;
+
+}
+#searchBar #searchCourses form input[type="text"]{
+    width:100%;
+    float: left;
+    border:none;
+    font-family: monospace;
+    font-size: smaller;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+    padding:3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    
+   
+    
+}
+
+#searchBar #searchCourses form input[type="text"]:focus{
+    padding:3px;
+    border:none;
+    font-family: monospace;
+    font-size: x-small;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+    width: 100%;
+    box-shadow: 0px 0px 5px #2C93C9;
+
+}
+
+
+#searchBar #searchCourses form input[type="submit"]{
+    width:100%;
+    padding:3px;
+    border:none;
+    font-family: monospace;
+    font-size: x-small;
+    background-color:#2C93C9;
+    color:white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-transform: uppercase;
+    outline: none;
+    text-align: center;
+    box-shadow: 0px 0px 5px #2C93C9;
+
+}
+
+
+#searchBar #searchCourses form input[type="submit"]:hover{
+    background-color: #777;
+    cursor: pointer;
+}
+
+/* search course styling ends here */
+
+
+
+/* showcase styling starts here */
+
+#showcase{
+    width:100%;
+    display: block;
+    margin-bottom: 8%;
+}
+
+#showcase #banner{
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+    background: url("assets/images/tabanner2.png");
+    background-size: content;
+    position: relative;
+    display:block;
+    background-position: center top;
+
+}
+
+#image1{
+  width: 20%;
+  margin-top: 2%;
+  display: none;
+  
+
+}
+
+#image1 img{
+  width:130px;
+  height:70px;
+  display: block;
+}
+
+
+
+
+
+/* showcase styling ends here */
+
+
+
+/* what we teach styling starts here */
+
+#slider{
+    margin-top: 2%;
+    width:600px;
+    float: left;
+    border:5px solid white;
+    
+ 
+ }
+
+#services{
+    width: 100% !important;
+    float: left;
+    background-color: #f9f9f9;
+    border: none;
+    overflow: hidden;
+    margin-top:25%;
+    box-shadow: 0px 15px 25px rgb(241, 240, 240);
+    padding: 10px 25px;
+    border-top-right-radius: 0px !important;
+    border-left:5px solid #2C93C9;
+    box-shadow: 2px 2px  20px #D6EBF5;
+    margin-bottom: 10% !important;
+}
+
+#services h1{
+    margin-bottom:5%;
+    margin-left:5%;
+    font-weight:100;
+    font-family:'Times New Roman', Times, serif;
+    color:#2C93C9;
+    padding-bottom:4px;
+    border-bottom:1px solid rgb(241, 239, 239);
+    font-size: 20px;
+
+}
+
+.service_box{
+    background:#E7F3FA;
+    max-width:100%;
+    max-height: 20%;
+    padding:20px;
+    overflow: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+   
+}
+
+#slider{
+    width:100%;
+}
+
+
+/* what we teach styling ends here */
+
+
+/* about us styling starts here */
+
+#aboutUs{
+    width: 100% !important;
+    float: right;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: none;
+    border-bottom-left-radius: 0px !important;
+    box-shadow: 2px 2px  20px #D6EBF5;
+    margin-bottom: 15%;
+   
+
+}
+
+#aboutUs  h1{
+    margin-left: 5%;
+    font-size: 25px;
+    font-weight:100;
+    color:#2C93C9;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+    margin-top:10%;
+    
+}
+
+#aboutUs .aboutUs{
+    background:#E7F3FA;
+    max-width:100%;
+    max-height: 20%;
+    padding:20px;
+    border-bottom-left-radius: 0px !important;
+}
+
+#aboutUs .aboutUs p{
+    padding-top: 10px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: small;
+    
+}
+
+.read_more{
+    color:#2C93C9;
+}
+
+.read_more:hover{
+    color:red;
+}
+
+.read_more:active{
+    color:#777;
+}
+
+
+
+/* about us styling ends here */
+
+
+
+/* why choose us styling starts here */
+
+#whyUs{
+    width:100%;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius:0px;
+    margin: 0 auto;
+    border-left:5px solid #2C93C9;
+    box-shadow: 0px 5px 0px white;
+    box-shadow: 2px 2px  20px #D6EBF5;
+    margin-bottom: 5%;
+}
+
+#whyUs h1{
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-weight:100;
+    font-family: 'Times New Roman', Times, serif;
+    color:#2C93C9;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+}
+
+.card_container{
+   
+    width:100% !important;
+    margin: 0 auto;
+    background-color:#D6EBF5;
+    padding: 20px;
+    overflow: auto;
+    border-top-right-radius:0px;
+    box-shadow: 2px 2px  20px #D6EBF5;
+}
+
+.card_container2{
+   
+    width:100% !important;
+    margin: 0 auto;
+    background-color:#D6EBF5;
+    padding: 20px;
+    overflow: auto;
+    border-bottom-right-radius:0px;
+    box-shadow: 2px 2px  20px #D6EBF5;
+    
+
+}
+
+.card_container2 #card{
+    float: left;
+    width:33%;
+    padding:5px;
+}
+
+.card_container #card{
+    float: left;
+    width:33%;
+    padding:5px;
+}
+
+#text_card h5{
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center !important;
+    font-weight: 100 !important;
+    font-size: x-small !important;
+    padding-left: 2px !important;
+    
+}
+
+/* why choose us styling ends here */
+
+
+
+/* Contact form styling starts here */
+#contact_us{
+    width:100%;
+    float: right;
+    padding: 30px !important;
+    background-color: #f9f9f9;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0px 5px 0px white;
+    margin-top: 15%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 2px 0px  20px #D6EBF5;
+    border-left:5px solid #2C93C9;
+    margin-bottom: 10%;
+    
+ 
+}
+
+#contact_us h1{
+
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-weight:100;
+    font-family: 'Times New Roman', Times, serif;
+    color:#2C93C9;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+
+}
+
+#contact_us .contact_container{
+    background:#E7F3FA;
+    max-width:100% !important;
+    max-height: 20%;
+    padding:20px;
+    overflow: auto;
+    border-top-right-radius: 0px;
+    border-top-left-radius:0px ;
+    margin: 0 auto;
+}
+
+#contact_us .contact_container form{
+    padding: 2%;
+    width: 100%;
+    border:none;
+}
+
+#contact_us .contact_container form input, textarea{
+    display: block;
+    padding:10px;
+    width:90%;
+    background-color:white;
+    border:none;
+    outline:none;
+    border-radius: 2px;
+    font-size: small;
+    font-family: monospace;
+    font-size: large;
+    margin:0 auto;
+    margin-bottom: 8px;
+
+}
+
+#contact_us .contact_container form input:focus,textarea:focus{
+   
+    box-shadow: 0px 0px 5px #2C93C9;
+}
+
+#contact_us .contact_container form textarea{
+    font-style: italic;
+    font-family: monospace;
+    resize:none;
+    font-size: large;
+}
+
+#contact_us .contact_container form input[type="submit"]{
+    background-color: #2C93C9;
+    color:white;
+}
+
+#contact_us .contact_container form input[type="submit"]:hover{
+    background-color: #666;
+    cursor: pointer;
+}
+
+#call_chat{
+    margin-top: 10%;
+    width:100%;
+    display: inline-block;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0px 5px 0px white;
+    border-top-left-radius: 0px;
+    box-shadow: 2px 0px  20px #D6EBF5;
+    bottom:10%;
+    border-left:5px solid #2C93C9;
+
+}
+
+
+#call_chat h1{
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-weight:100;
+    font-family: 'Times New Roman', Times, serif;
+    color:#2C93C9;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+}
+
+#call_chat .phone_box{
+    width:100%;
+    padding:35px 5px;
+    background-color:#ECF5FB;
+    box-shadow: 2px 2px  20px #D6EBF5;
+    
+}
+
+#call_chat .phone_box .phone_container{
+    width: 80% !important;
+    margin:0 auto;
+    padding:20px 5px;
+    background-color:white;
+    overflow: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 2px 2px  20px #D6EBF5;
+    
+}
+
+#call_chat .phone_box .phone_container div img{
+    margin-left:10% !important;
+    width: 30px;
+    height: 30px;
+
+}
+
+
+
+#call_chat .phone_box .phone_container div a{
+    color:#999;
+    font-size:20px !important;
+    font-family: monospace;
+
+}
+
+#call_chat .phone_box .phone_container div a:hover{
+    color:black;
+    cursor: pointer;
+}
+
+
+
+/* Contact form styling ends here */
+
+
+
+
+
+/* subscribe form styling starts here */
+
+#subscribe{
+    width:100%;
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-top-right-radius: 0px;
+    box-shadow: 0px 5px 0px white;
+    margin-top:15%;
+    box-shadow: 2px 2px  20px #D6EBF5;
+    border-left:5px solid #2C93C9;
+    
+    
+}
+
+#subscribe h1{
+    margin-bottom: 3%;
+    margin-left: 5%;
+    font-weight:100;
+    color:#444;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#2C93C9;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+}
+
+
+#subscribe .subscribe .form input[type="email"]{
+    width:70% !important;
+    padding:10px 20px !important;
+    border:1px solid rgb(209, 209, 209);
+    font-family: monospace;
+    font-size: large;
+    outline: none;
+    border-right:none;
+    margin: 0 auto !important;
+}
+
+#subscribe .subscribe .form input[type="email"]:focus{
+    box-shadow: 0px 0px 5px #2C93C9;
+    border:none;
+}
+
+#subscribe .subscribe .form input[type="submit"]{
+    width:30% !important;
+    padding:10px 2px !important;
+    font-family: monospace;
+    font-size: large;
+    outline: none;
+    background-color: #2C93C9;
+    color: white;
+    border: 1px solid #2C93C9;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+
+}
+
+#subscribe .subscribe .form input[type="submit"]:hover{
+    background-color: #777;
+    cursor: pointer;
+    border:1px solid transparent;
+    color:white;
+
+}
+
+
+
+/* Subscribe form styling ends here */
+
+
+
+/* Social media styling starts here */
+
+
+
+#social{
+
+    width:100%;
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-top-right-radius: 0px;
+    box-shadow: 0px 5px 0px white;
+    margin-top:15%;
+    box-shadow: 2px 2px  20px #D6EBF5;
+    border-left:5px solid #2C93C9;
+  
+
+
+}
+
+#social h1{
+    margin-bottom: 5%;
+    font-weight:100;
+    font-family: 'Times New Roman', Times, serif;
+    color:#2C93C9;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+    text-align: left;
+    margin-right: 2%;
+}
+
+
+.social{
+    width:100%;
+    margin:0 auto;
+    padding:10px;
+    
+}
+
+.social ul{
+    width:90% !important;
+    margin: 0 auto;
+    padding: 2px;
+    
+}
+
+.social ul li{
+    display: inline-block;
+    padding: 4px 4px 0 4px;
+    margin-left:6px;
+    background-color: white;
+    border-radius: 50%;
+    transition: border 1s ease;
+    background-color: transparent;
+    border: 1px solid #2C93C9;
+    
+ 
+}
+
+.social ul li:hover{
+   
+    background-color: rgb(177, 233, 255);
+    
+
+}
+
+/* Social media styling ends here */
+
+
+
+/* footer styling starts here */
+
+#footer_bar{
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(215, 241, 253);
+    padding: 10px;
+    outline: none;
+    float: left;
+    
+}
+
+footer{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    background-color: #2C93C9;
+    color:white;
+    
+}
+
+footer #copyright{
+    width:100%;
+    text-align: center;
+}
+
+footer #copyright kbd{
+    font-family: monospace;
+    font-size:xx-small;
+    
+}
+
+}

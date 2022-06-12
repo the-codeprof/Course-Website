@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox Tutorial</title>
+    <style> 
+
+body{
+    position: relative;
+}
+    
+        .flex-container {
+            direction: rtl;
+            display: -webkit-flex;
+            display: flex;
+            width: 300px;
+            height: 300px;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            animation: fan;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1200ms;
+            animation-fill-mode: forwards;
+            transition: rotate 1s ease-in-out;
+            position: absolute;
+            left:45%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            
+           
+            
+        }
+        
+        .flex-item {
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+           
+        }
+
+        @keyframes fan {
+            
+                from{
+                    transform: rotate(0deg);
+                }
+
+                to{
+                    transform: rotate(720deg);
+                }
+        
+            
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="flex-container">
+          <div class="flex-item" style="background-color: red; border-top-left-radius: 100%;"></div>
+          <div class="flex-item" style="background-color: yellow;border-top-right-radius: 100%;"></div>
+          <div class="flex-item" style="background-color: blue; border-bottom-left-radius: 100%;"></div>
+          <div class="flex-item" style="background-color: green; border-bottom-right-radius: 100%;"></div>  
+        </div>
+
+
+    
+</body>
+</html>
